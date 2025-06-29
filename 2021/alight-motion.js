@@ -1,40 +1,38 @@
-var obj = JSON.parse($response.body);
+var objc = JSON.parse($response.body);
 
-obj= {
-  "result" : {
-    "result" : "success",
-    "msTime" : 1670593113048,
-    "accountCreatedMillis" : null,
-    "licenses" : [
+objc = {
+  "result": {
+    "result": "success",
+    "msTime": 2009216800128,
+    "accountCreatedMillis": null,
+    "licenses": [
       {
-        "productId" : "alightcreative.motion.1y_1y_t10",
-        "label" : null,
-        "benefits" : [
+        "benefits": [
           "RemoveWatermark",
           "MemberEffects",
           "ProjectPackageSharing",
           "FutureMemberFeatures",
           "AdvancedEasing",
           "CameraObjects",
-          "LayerParenting"
+          "LayerParenting",
+          "CloudStorageLowTier"
         ],
-        "period" : "1y",
-        "valid" : true,
-        "expires" : 1699389411000,
-        "details" : null,
-        "type" : "subscription",
-        "autoRenewing" : true,
-        "orderNumber" : "shizukuyyds",
-        "linkStatus" : "linked-nologin",
-        "store" : "apple_app_store"
+        "type": "subscription",
+        "store": "apple_app_store",
+        "autoRenewing": true,
+        "orderNumber": "AMxqyyds",
+        "productId": "alightcreative.motion.1y_t60_1w",
+        "period": "1y",
+        "label": null,
+        "details": null,
+        "expires": 1740926942000,
+        "valid": true,
+        "linkStatus": "linked-current"
       }
     ],
-    "warnings" : [
-
-    ]
+    "warnings": []
   }
 }
 
 
-
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(objc) });
